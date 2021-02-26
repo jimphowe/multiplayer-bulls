@@ -183,6 +183,15 @@ function TheGame({state}) {
                     <p className= "output2">{winLoss.join("\n")}</p>
                 </div>
             </div>
+	    <div>
+	    	<p>All players must make a guess before the guesses are processed! You are trying to guess
+	    	a 4 digit number, which does not contain repeated digits.
+                After each guess, the game will tell you how many Cows and Bulls you got, with each
+                guess sorted in a list. A Bull is a correct digit in the correct spot, and a Cow is a
+                correct digit but in the wrong spot. The system will not allow you to make any guesses
+                which are not 4 numerical digits or which contain repeated digits. All Players must make
+	        a guess before the guesses will be processed! Good luck!</p>
+	    </div>
         </div>
     );
 }
