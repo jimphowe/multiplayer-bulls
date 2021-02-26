@@ -226,13 +226,6 @@ function Bulls() {
         game_started: false,
         view: [],
         winLoss: [],
-
-        // view: [],
-        // name: "",
-        // guesses: [],
-        // players: [],
-        // winLoss: [],
-        // lastWinners: [],
     });
 
     useEffect(() => {
@@ -244,18 +237,6 @@ function Bulls() {
     if (state.name === "") {
         body = <Login />;
     }
-        //game is won if anyone has the right answer
-        // else if (gameIsWon()) {
-        //     body = <GameWon reset={reset} />;
-        // }
-        // game is lost if anyone has used 8 guesses and no one has won
-        // else if (gameIsLost()) {
-        //     body = <GameOver reset={reset} />;
-        // }
-        // else {
-        //   console.log(state["view"]);
-        //   body = <Play state={state} />;
-    // }
     else {
         console.log(state["view"]);
         body = <TheGame state={state} />;

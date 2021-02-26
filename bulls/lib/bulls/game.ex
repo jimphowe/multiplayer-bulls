@@ -260,7 +260,7 @@ defmodule Bulls.Game do
       end
 
     %{
-      secret: st.secret,
+      secret: secret,
       observers: st.observers,
       players: st.players,
       players_ready: players_ready,
