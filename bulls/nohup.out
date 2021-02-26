@@ -1,0 +1,139 @@
+Building...
+Resolving Hex dependencies...
+Dependency resolution completed:
+Unchanged:
+  cowboy 2.8.0
+  cowboy_telemetry 0.3.1
+  cowlib 2.9.1
+  file_system 0.2.10
+  gettext 0.18.2
+  jason 1.2.2
+  mime 1.5.0
+  phoenix 1.5.7
+  phoenix_html 2.14.3
+  phoenix_live_dashboard 0.4.0
+  phoenix_live_reload 1.3.0
+  phoenix_live_view 0.15.4
+  phoenix_pubsub 2.0.0
+  plug 1.11.0
+  plug_cowboy 2.4.1
+  plug_crypto 1.2.0
+  ranch 1.7.1
+  telemetry 0.4.2
+  telemetry_metrics 0.6.0
+  telemetry_poller 0.5.1
+All dependencies are up to date
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 904 packages in 8.637s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Hash: d924d8283ebb3e5969d4
+Version: webpack 4.41.5
+Time: 5021ms
+Built at: 02/20/2021 2:32:05 AM
+                Asset       Size  Chunks             Chunk Names
+       ../css/app.css     13 KiB       0  [emitted]  app
+       ../favicon.ico   1.23 KiB          [emitted]  
+../images/phoenix.png   13.6 KiB          [emitted]  
+        ../robots.txt  202 bytes          [emitted]  
+               app.js    159 KiB       0  [emitted]  app
+   app.js.LICENSE.txt  788 bytes          [emitted]  
+Entrypoint app = ../css/app.css app.js
+ [4] ../deps/phoenix/priv/static/phoenix.js 40.2 KiB {0} [built]
+ [5] multi ./js/app.js 28 bytes {0} [built]
+ [6] ./css/app.scss 39 bytes {0} [built]
+ [7] ../deps/phoenix_html/priv/static/phoenix_html.js 2.21 KiB {0} [built]
+[12] (webpack)/buildin/module.js 497 bytes {0} [built]
+[13] ./js/app.js + 2 modules 9.19 KiB {0} [built]
+     | ./js/app.js 756 bytes [built]
+     | ./js/Bulls.js 7.53 KiB [built]
+     | ./js/socket.js 918 bytes [built]
+    + 11 hidden modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!css/app.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [1] ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./css/app.scss 811 bytes {0} [built]
+    [2] ./node_modules/css-loader/dist/cjs.js!./css/phoenix.css 10.4 KiB {0} [built]
+        + 1 hidden module
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!../node_modules/milligram/dist/milligram.css:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Check your digested files at "priv/static"
+Generating release...
+Release bulls-0.1.0 already exists. Overwrite? [Yn] 
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+Starting app...
+Stopping old copy of app, if any...
+--rpc-eval : RPC failed with reason :nodedown
+Starting app...
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+Stopping old copy of app, if any...
+--rpc-eval : RPC failed with reason :nodedown
+Starting app...
+02:35:30.875 [info] Running BullsWeb.Endpoint with cowboy 2.8.0 at :::4791 (http)
+02:35:30.881 [info] Access BullsWeb.Endpoint at http://hw05.jim-howe.com
+02:35:35.949 request_id=FmVUH4vbZxhAKKUAAAAB [info] GET /
+02:35:35.950 request_id=FmVUH4vbZxhAKKUAAAAB [info] Sent 200 in 805µs
+02:35:36.220 [info] CONNECTED TO BullsWeb.UserSocket in 75µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+02:35:36.246 [info] JOINED game:1 in 186µs
+  Parameters: %{}
+02:35:46.922 request_id=FmVUIhnoD-qOa00AAAAx [info] GET /
+02:35:46.923 request_id=FmVUIhnoD-qOa00AAAAx [info] Sent 200 in 511µs
+02:35:47.175 [info] CONNECTED TO BullsWeb.UserSocket in 138µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+02:35:47.210 [info] JOINED game:1 in 152µs
+  Parameters: %{}
+02:36:13.048 request_id=FmVUKC8jF8D3NnUAAABR [info] GET /
+02:36:13.049 request_id=FmVUKC8jF8D3NnUAAABR [info] Sent 200 in 1ms
+02:36:13.311 [info] CONNECTED TO BullsWeb.UserSocket in 105µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+02:36:13.342 [info] JOINED game:1 in 188µs
+  Parameters: %{}
+02:38:15.928 request_id=FmVURMtbqI4tzNwAAACB [info] GET /
+02:38:15.930 request_id=FmVURMtbqI4tzNwAAACB [info] Sent 200 in 1ms
+02:38:15.996 [info] CONNECTED TO BullsWeb.UserSocket in 199µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+02:38:16.176 [info] CONNECTED TO BullsWeb.UserSocket in 95µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+02:38:16.209 [info] JOINED game:1 in 198µs
+  Parameters: %{}
+Stopping old copy of app, if any...
+--rpc-eval : RPC failed with reason :nodedown
+Starting app...
+03:32:16.553 [info] Running BullsWeb.Endpoint with cowboy 2.8.0 at :::4791 (http)
+03:32:16.559 [info] Access BullsWeb.Endpoint at http://hw05.jim-howe.com
+03:32:20.952 [info] CONNECTED TO BullsWeb.UserSocket in 91µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+03:32:20.979 [info] JOINED game:1 in 195µs
+  Parameters: %{}
+03:35:07.129 request_id=FmVXXwbFlp7m24AAAAAh [info] GET /
+03:35:07.132 request_id=FmVXXwbFlp7m24AAAAAh [info] Sent 200 in 2ms
+03:35:07.328 [info] CONNECTED TO BullsWeb.UserSocket in 175µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+03:35:07.353 [info] JOINED game:1 in 270µs
+  Parameters: %{}

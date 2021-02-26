@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.title {
+  font-size: 500%;
+  color: blueviolet;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 1%;
+}
+
+.box {
+  border: black 2px solid;
+}
+
+.test {
+
+  color: black;
+  margin-top: 1%;
+}
+
+.guess {
+  text-align: center;
+  font-size: 100%;
+
+  line-height: 500%;
+  margin-right: 0px;
+}
+
+.output {
+  font-size: 200%;
+  color: red;
+  white-space: pre-line;
+
+}
+
+.guess {
+  margin-top: 0px;
+
+}
+
+.output {
+  font-size: 100%;
+  white-space: pre-line;
+  margin-top: 0px;
+}
+
+h1 {
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  font-size: 500%;
+  margin-bottom: 0%;
+}
+
+.win {
+  color: rgb(27, 189, 27);
+}
+
+.lose {
+  color: red;
+}
