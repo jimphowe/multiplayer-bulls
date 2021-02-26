@@ -1,23 +1,16 @@
 defmodule Bulls.Game do
   # This module doesn't do stuff,
   # it computes stuff.
-
-
   def new do
     %{
-      secret: "1234",
+      secret: random_secret(),
       observers: MapSet.new(),
       players: MapSet.new(),
       players_ready: %{},
-
       guesses: %{},
       current_guesses: %{},
-
       winLoss: %{},
-
       game_started: false,
-
-
       view: "",
     }
   end
@@ -33,14 +26,10 @@ defmodule Bulls.Game do
       observers: observers,
       players: st.players,
       players_ready: st.players_ready,
-
       guesses: st.guesses,
       current_guesses: st.current_guesses,
-
       winLoss: Map.put(st.winLoss, name, %{:win => 0, :loss => 0}),
-
       game_started: st.game_started,
-
       view: st.view,
     }
   end
@@ -59,16 +48,11 @@ defmodule Bulls.Game do
       observers: observers,
       players: players,
       players_ready: players_ready,
-
       guesses: guesses,
       current_guesses: current_guesses,
-
       winLoss: st.winLoss,
-
       game_started: st.game_started,
-
       view: st.view,
-
     }
   end
 
@@ -85,14 +69,10 @@ defmodule Bulls.Game do
       observers: observers,
       players: players,
       players_ready: players_ready,
-
       guesses: guesses,
       current_guesses: current_guesses,
-
       winLoss: st.winLoss,
-
       game_started: st.game_started,
-
       view: st.view,
 
     }
@@ -110,14 +90,10 @@ defmodule Bulls.Game do
       observers: st.observers,
       players: st.players,
       players_ready: players_ready,
-
       guesses: st.guesses,
       current_guesses: st.current_guesses,
-
       winLoss: st.winLoss,
-
       game_started: game_started,
-
       view: st.view,
 
     }
@@ -132,14 +108,10 @@ defmodule Bulls.Game do
       observers: st.observers,
       players: st.players,
       players_ready: players_ready,
-
       guesses: st.guesses,
       current_guesses: st.current_guesses,
-
       winLoss: st.winLoss,
-
       game_started: st.game_started,
-
       view: st.view,
 
     }
@@ -215,12 +187,6 @@ defmodule Bulls.Game do
 
   def guess(st, codeGuess, name) do
 
-    # persons_new_guesses = (Map.get(st.guesses, name) ++ [codeGuess])
-
-    # guesses = Map.put(st.guesses, name, persons_new_guesses)
-
-
-
     guesses = st.guesses
     current_guesses = Map.put(st.current_guesses, name, codeGuess)
 
@@ -238,10 +204,6 @@ defmodule Bulls.Game do
         guesses
       end
 
-
-
-
-
     guesses_Processed =
       if (Enum.count(Map.get(guesses, name)) == (length_of_guesses + 1)) do
         true
@@ -255,9 +217,6 @@ defmodule Bulls.Game do
       else
         false
       end
-
-
-
 
     secret =
       if (secret_Found) do
@@ -300,21 +259,15 @@ defmodule Bulls.Game do
         current_guesses
       end
 
-
-
     %{
       secret: st.secret,
       observers: st.observers,
       players: st.players,
       players_ready: players_ready,
-
       guesses: guesses,
       current_guesses: current_guesses,
-
       winLoss: winLoss,
-
       game_started: game_started,
-
       view: st.view,
 
     }
@@ -324,19 +277,14 @@ defmodule Bulls.Game do
   def reset(st) do
 
     %{
-      secret: "1234",
+      secret: random_secret(),
       observers: MapSet.union(st.observers,st.players),
       players: MapSet.new(),
       players_ready: %{},
-
       guesses: %{},
       current_guesses: %{},
-
       winLoss: %{},
-
       game_started: false,
-
-
       view: "",
 
     }
@@ -357,16 +305,11 @@ defmodule Bulls.Game do
       observers: MapSet.to_list(st.observers),
       players: MapSet.to_list(st.players),
       players_ready: st.players_ready,
-
       guesses: st.guesses,
       current_guesses: st.current_guesses,
-
       winLoss: winLoss,
-
       game_started: st.game_started,
-
       view: view,
-
       name: name,
 
     }

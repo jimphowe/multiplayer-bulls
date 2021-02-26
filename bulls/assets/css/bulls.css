@@ -10,6 +10,14 @@
   margin-bottom: 1%;
 }
 
+input[type=text] {
+  border: black solid 2px;
+}
+
+body {
+  background-color: lightblue;
+}
+
 .box {
   border: black 2px solid;
 }
@@ -32,12 +40,16 @@
   font-size: 200%;
   color: red;
   white-space: pre-line;
+}
 
+.output2 {
+  font-size: 200%;
+  color: green;
+  white-space: pre-line;
 }
 
 .guess {
   margin-top: 0px;
-
 }
 
 .output {

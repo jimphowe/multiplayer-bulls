@@ -177,10 +177,10 @@ function TheGame({state}) {
             </div>
             <div className = "row">
                 <div className = "column">
-                    <p>{view.join("\n")}</p>
+                    <p className= "output">{view.join("\n")}</p>
                 </div>
                 <div className = "column">
-                    <p>{winLoss.join("\n")}</p>
+                    <p className= "output2">{winLoss.join("\n")}</p>
                 </div>
             </div>
         </div>
