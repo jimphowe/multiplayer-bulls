@@ -137,3 +137,46 @@ Starting app...
   Parameters: %{"token" => "", "vsn" => "2.0.0"}
 03:35:07.353 [info] JOINED game:1 in 270µs
   Parameters: %{}
+Stopping old copy of app, if any...
+--rpc-eval : RPC failed with reason :nodedown
+Starting app...
+23:16:02.228 [info] Running BullsWeb.Endpoint with cowboy 2.8.0 at :::4792 (http)
+23:16:02.236 [info] Access BullsWeb.Endpoint at http://hw06.jim-howe.com
+23:16:04.532 [info] CONNECTED TO BullsWeb.UserSocket in 192µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+23:16:04.558 [info] JOINED game:69 in 461µs
+  Parameters: %{}
+23:16:12.659 request_id=FmdvThlgD2CamCIAAAAx [info] GET /
+23:16:12.660 request_id=FmdvThlgD2CamCIAAAAx [info] Sent 200 in 776µs
+23:20:08.280 [info] CONNECTED TO BullsWeb.UserSocket in 251µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+23:20:08.303 [info] JOINED game:69 in 340µs
+  Parameters: %{}
+23:21:45.875 [info] CONNECTED TO BullsWeb.UserSocket in 146µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+23:21:46.072 [info] JOINED game:0 in 352µs
+  Parameters: %{}
+23:24:16.639 [info] CONNECTED TO BullsWeb.UserSocket in 207µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+23:24:16.669 [info] JOINED game:69 in 424µs
+  Parameters: %{}
+23:28:16.909 [info] CONNECTED TO BullsWeb.UserSocket in 187µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+23:28:16.938 [info] JOINED game:69 in 407µs
+  Parameters: %{}
+00:19:49.989 [info] CONNECTED TO BullsWeb.UserSocket in 239µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"token" => "", "vsn" => "2.0.0"}
+00:19:50.159 [info] JOINED game:0 in 550µs
+  Parameters: %{}
