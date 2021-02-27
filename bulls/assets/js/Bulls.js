@@ -158,6 +158,16 @@ function TheGame({state}) {
 
     return (
         <div>
+            <div>
+                <p id="game-text">Welcome to Cows and Bulls! You are trying to guess a 4 digit number, which does not contain
+                    repeated digits. When you enter a game you are automatically made an observer. To join the
+                    game, select the player button. After everyone who has selected player also selects 'ready',
+                    the game will begin. Each round you type in your 4 digit guess and hit enter. After every
+                    player has guessed the game will reveal everyone's guesses and how many Cows + Bulls they have.
+                    A Bull is a correct digit in the correct spot, and a Cow is a correct digit but in the wrong spot.
+                    The system will not allow you to make any guesses which are not 4 numerical digits or which contain
+                    repeated digits. A win loss count is shown to keep track of multiple rounds. Good luck!</p>
+            </div>
             <div className = "row">
                 <div className = "column">
                     <p className="box">Your Name: {name}</p>
@@ -183,15 +193,6 @@ function TheGame({state}) {
                     <p className= "output2">{winLoss.join("\n")}</p>
                 </div>
             </div>
-	    <div>
-	    	<p>All players must make a guess before the guesses are processed! You are trying to guess
-	    	a 4 digit number, which does not contain repeated digits.
-                After each guess, the game will tell you how many Cows and Bulls you got, with each
-                guess sorted in a list. A Bull is a correct digit in the correct spot, and a Cow is a
-                correct digit but in the wrong spot. The system will not allow you to make any guesses
-                which are not 4 numerical digits or which contain repeated digits. All Players must make
-	        a guess before the guesses will be processed! Good luck!</p>
-	    </div>
         </div>
     );
 }
@@ -208,17 +209,23 @@ function Login() {
     return (
         <div className="row">
             <div className="column">
+                <p>user name:</p>
                 <input type="text"
                        value={name}
                        onChange={(ev) => setName(ev.target.value)} />
             </div>
             <div className="column">
+                <p>room name:</p>
                 <input type="text" id="roomName"/>
             </div>
             <div className="column">
-                <button onClick={() => Go(name, document.getElementById("roomName").value)}>
+                <button id="login-button" onClick={() => Go(name, document.getElementById("roomName").value)}>
                     Login
                 </button>
+            </div>
+            <div className="row">
+                <p id="login-text">Enter your username and a room name! If you enter the same room name as a
+                    friend, you will be put in the same game!</p>
             </div>
         </div>
     );

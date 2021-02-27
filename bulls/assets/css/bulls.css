@@ -75,3 +75,15 @@ h3 {
 .lose {
   color: red;
 }
+
+#login-button {
+  margin-top: 50px;
+}
+
+#login-text {
+  margin-top: 50px;
+}
+
+#game-text {
+  margin-top: 25px;
+}
